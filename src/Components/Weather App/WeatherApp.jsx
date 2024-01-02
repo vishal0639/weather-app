@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import './WeatherApp.css'
 import search_icon from '../Assets/search.png';
 import clear_icon from '../Assets/clear.png';
@@ -10,6 +10,8 @@ import snow_icon from '../Assets/snow.png';
 import wind_icon from '../Assets/wind.png';
 
 export const WeatherApp = () => {
+
+    useEffect(() => { }, [])
 
     let inputRef = useRef();
     let [humidity, setHumidity] = useState();
